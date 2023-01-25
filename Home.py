@@ -13,7 +13,7 @@ I do miss my family a lot, and I am quite worried about my brother :`(
 st.set_page_config(layout="wide")
 st.title(page_title)
 col1, col2 = st.columns(2)
-images_path = r"./app2/resources/images/"
+images_path = r"./resources/images/"
 with col1:
     st.image(images_path + "photo.png", width=400)
 
@@ -25,7 +25,7 @@ st.write(content1)
 
 col3, col4, col5 = st.columns([3, 1, 3])
 
-df = pd.read_csv(r"./app2/resources/data.csv", sep=";")
+df = pd.read_csv(r"./resources/data.csv", sep=";")
 
 for index, row in df.iterrows():
     def func():
